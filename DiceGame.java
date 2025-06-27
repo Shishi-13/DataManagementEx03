@@ -1,6 +1,13 @@
 import java.util.Random;
+import java.util.Scanner;
+
 public class DiceGame{
   public static void main(String[] args){
+    Scanner scan = new Scanner(System.in);
+    
+    System.out.println("What is your name?");
+    String name=scanner.nextLine();
+    System.out.println("Hello, " + name + "!");
     System.out.println("Dice rolling...");
 
     Random r = new Random();
@@ -11,11 +18,13 @@ public class DiceGame{
       System.out.println("Dice " + i + ": " + dice);
       t+=dice;
     }
-    System.out.println("total: " + t);
 
+    
+    System.out.println("total: " + t);
     if(t>7){
       System.out.println("You won");
     }else{
       System.out.println("You lost");
     }
+    scan.close();
 }
