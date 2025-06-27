@@ -27,4 +27,5 @@ public class DiceGame{
       System.out.println(name + " lost");
     }
     scan.close();
+  }
 }
