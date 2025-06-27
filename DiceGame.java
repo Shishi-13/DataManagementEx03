@@ -18,6 +18,8 @@ public class DiceGame{
       System.out.println("Dice " + i + ": " + dice);
       t+=dice;
     }
+
+    
     System.out.println("total: " + t);
     scan.close();
 }
